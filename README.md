@@ -51,7 +51,7 @@
     Program.java -> java compiler -> Program.class -> JVM -> Output
 
 ### Anatomy of a class
-![alt text](/images/image.png)
+![alt text](/Images/image.png)
 
 ### File Extesions
 - .java : java source Code, JLL, editable
@@ -59,7 +59,7 @@
 
 ### JDK vs JVM vs JRE
 
-![alt text](/images/image-1.png)
+![alt text](/Images/image-1.png)
 
 #### JDK
 - .jdk s/w dev kit req to dev java app
@@ -95,7 +95,7 @@
 1. create a class ot output :good morning using a text editor and check output.
 2. Create a new Project in Intelij Idea and output "subscribe" on the console.
 3. show the following patterns.
-![alt text](/images/image-2.png)
+![alt text](/Images/image-2.png)
 
 ## Chapter 2 Practice Exercise
 
@@ -130,7 +130,7 @@
     - DataType VarName = Value;
 
 ### Data Types
-![alt text](/images/image-3.png)
+![alt text](/Images/image-3.png)
 
 - byte - 8 bit
 - short - 2 byte
@@ -166,14 +166,14 @@ Scanner scanner = new Scanner(System.in)
 
 ### Type Conversion
 
-![alt text](/images/image-4.png)
+![alt text](/Images/image-4.png)
 
 - implicite type conversion / coersion- small to big
 - explicit type conversion / casting - big to small (data may loss)
 
 ## Chapter 2 Challenges
 4. Show the following patterns using single print statement
-![alt text](/images/image-2.png)
+![alt text](/Images/image-2.png)
 5. Create a program to input name of the person and respond with "Welcome NAME to KG Coding"
 6. Create a program to add two numbers.
 
@@ -207,12 +207,12 @@ Scanner scanner = new Scanner(System.in)
 - = : assign value of right to left
 
 ### Arithmatic Operators
-![alt text](/images/image-5.png)
+![alt text](/Images/image-5.png)
 
 - +, -, *, /, %
 
 ### Order of Operation and operator precedence
-![alt text](/images/image-6.png)
+![alt text](/Images/image-6.png)
 - BODMAS
 
 ### Shorthand Operators
@@ -244,7 +244,7 @@ Scanner scanner = new Scanner(System.in)
 - Lower priority than math and comparison operators
 
 ### Operator Precedence
-![alt text](/images/image-7.png)
+![alt text](/Images/image-7.png)
 
 - Parentheses ()
 - Unary ++ -- + - ! ~
