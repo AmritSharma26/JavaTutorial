@@ -239,11 +239,11 @@ Scanner scanner = new Scanner(System.in)
 ### Logical Operators
 
 - AND (&&) : all must be true
-- OR (|) : one condition must be true
+- OR (||) : one condition must be true
 - Not (!) : inverts
 - Lower priority than math and comparison operators
 
-### Operator Precedence
+### Operator Precedence and Associativity
 ![alt text](/Images/image-7.png)
 
 - Parentheses ()
@@ -262,7 +262,34 @@ Scanner scanner = new Scanner(System.in)
 - Assignment = += -= *= /= %= <<= >>= >>>= &= ^= |=
 
 ### Intro to Number System
- 
+- Binary (2) : 0,1
+- Octal (8) : 0,1,2,3,4,5,6,7
+- Decimal (10) : 0,1,2,3,4,5,6,7,8,9
+- Dexadecimal (16) : 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+
+- In Decimal  
+  $$423 = 4 * 10^2 + 2 * 10^1 + 3 * 10^0$$
+
+- In Binary  
+  $$11010.11_2 = 1 * 2^4 + 1 * 2^3 + 0 * 2^2 + 1 * 2^1 + 0 * 2^0 
+  + 1 * 2^{-1} + 1 * 2^{-2}$$  
+
+  $$= 16 + 8 + 2 + 0.5 + 0.25 = 26.75_{10}$$
+
+### Intro to Bitwise Operator
+
+- AND (&)
+- OR (|)
+- XOR (^) : true if both diff
+- NOT (~)
+- Left Shift (<<) : 0100 -> 1000 (multiply by 2)
+- Right Shift (>>) : 1100 -> 0110 (devide by 2)
+    - if positive zero filled
+    - if negetive one filled
+
+- ~5 = ~(00000101) = 11111010 = 2's compliment of -6.
+- if the MSB is 0 then its positive, convert directly.
+- if the MSB is 1 then its negetive, find its 2's compliment.
 
 
 ## Chapter 4 Challenges
@@ -291,3 +318,23 @@ divisible by 400).
         Child -> below 13       Teen -> below 20
         Adult -> below 60       Senior-> above 60
 
+21. Create a program that shows bitwise AND of two numbers.
+22. Create a program that shows bitwise OR of two numbers.
+23. Create a program that shows bitwise XOR of two numbers.
+24. Create a program that shows bitwise compliment of a number.
+25. Create a program that shows use of left shift operator.
+26. Create a program that shows use of right shift operator.
+27. Wrtite a program to check if a given number is even or odd using bitwise operators.
+
+## Chapter 4 Practice Exercise
+
+1. In java, && and || operators perform short-circuit evaluation. True
+2. In an if-else statement, the else block executes only when the if condition is false. True
+3. Java allows an if statement without the else part. True
+4. The ^ operator in Java is used for exponentiation. False
+5. Unary minus operator can be used to negate the value of a variable in Java. True
+6. a += b is equivalent to a = a + b in Java. True
+7. In Java, the binary number system uses base 10. False
+8. The number 1010 in binary is equivalent to 10 in decimal. True
+9. & and | are logical operators in Java. False
+10. In Java, a >> 2 shifts the binary bits of a to the left by 2 positions. False
