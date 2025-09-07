@@ -1,4 +1,4 @@
-# Introduction to java Chapter 1
+# Chapter 1 Introduction to java 
 - why
     - popular
     - wide(web, backend, mobile, enterprice sw)
@@ -35,7 +35,7 @@
     - Methods - Job, eat, run, cancelRoom, reserveRoom
 - Procedure oriented (functions)
 
-# Java Basics Chapter 2
+# Chapter 2 Java Basics 
 
 1. Installing JDK
 2. first class using text Editor
@@ -110,7 +110,7 @@
 9. class file contains machine code. fasle
 10. println adds a new line at the end of the line. true
 
-# Data Types, Variables and Input Chapter 3
+# Chapter 3 Data Types, Variables and Input 
 
 1. Variables : store Date, name, memory, value
 2. Data Types
@@ -190,7 +190,7 @@ Scanner scanner = new Scanner(System.in)
 9. Scanner class can be used to read both primitive data types and strings. True
 10. Explicit casting is required to convert a double to an int. True
 
-# Operators, If-else and Number System Chapter 4
+# Chapter 4 Operators, If-else and Number System 
 1. Assignment Operator
 2. Arithmetic Operators 
 3. Order of Operators
@@ -338,3 +338,104 @@ divisible by 400).
 8. The number 1010 in binary is equivalent to 10 in decimal. True
 9. & and | are logical operators in Java. False
 10. In Java, a >> 2 shifts the binary bits of a to the left by 2 positions. False
+
+# Chapter 5 
+
+1. Comments
+2. While Loop
+3. Methods
+4. Return statement
+5. Arguments
+6. Array
+7. 2D Array
+
+### Java Comments
+
+- // : single line
+- /* */ : multi line
+- /** */ : java Docs
+
+### Loops
+![alt text](Images/image-8.png)
+- Repeated execution of code
+- Types : while, for, do-while
+
+### While Loops
+- Initialization; -> while(condition){body + Updation}
+- repeat while condition true
+
+### Methods / Methods
+- block of reusable code
+- DRY(Don't repeat yourself)
+- camelCase
+
+- Method Syntax
+![alt text](Images/image-9.png)
+
+- In general function
+- function in class is methods
+- static method belong to class no need to make object
+
+### Return Statement
+- send value backfrom a function
+- return ends the function
+- prefer returning local values instead of global values
+
+### Argument and parameters
+- parameters -> functions -> return
+- Arguments vs parametes
+    - Arguments - Actual values that provided to function
+    - parametes - values that function received
+- multiple parameters
+- default parameters
+
+### Arrays
+![alt text](Images/image-10.png)
+- list of values in single varible of same data type
+- Index starts with 0
+
+- Array memory
+    ![alt text](Images/image-11.png)
+- Array Syntax
+    ![alt text](Images/image-12.png)
+
+- out of bound indexing
+
+### 2D Arrays
+![alt text](Images/image-13.png)
+
+- 2d : rows and cols
+    - Array of and arrays
+    - ![alt text](Images/image-14.png)
+    - Hetrogeneous Array
+        - {{1, 2, 3}, {4, 5}, {7, 8, 9, 10}}
+
+- 3d : length, breath, height
+
+
+## Chapter 5 Challenge
+
+28. Develop a program that prints the multiplication table for a given number.
+29. Create a program to sum all odd numbers from to to a specified number N.
+30. Write a function that calculates the factorial of a given number.
+31. Create a program that computes the sum of the digits of an integer.
+32. Create a program to find the Least Common Multiple (LCM) of two numbers.
+33. Create a prgram to find the Greatest Common Divisor (GCD) of two integers.
+34. Create a program to check whether a given number is prime.
+35. Create a program to reverse the digits of a number.
+36. Create a program to print the fibonacci series up to a certain number.
+37. Create a program to check if a number is an Armstrong number.
+38. Create a program to verify if a number is a plindrome.
+39. Create a program that print patters:
+    ![alt text](/Images/image-2.png)
+40. Create a program to find the sum and average of all elements in an array.
+41. Create a program to find number of occurences of and element in and array.
+42. Create a program to find the maximum and minimum elements in an array.
+43. Create a program to check if the given array is sorted.
+44. Create a program to return a new array deleting a specific element.
+45. Create a program to reverse and array.
+46. Create a program to check is the array is palindrome or not.
+47. Create a program to merge two sorted arrays.
+48. Create a program to search an element in a 2-D array.
+49. Create a program to do sums and average of all elemets in a 2-D array.
+50. Create a program to find the sum of two diagonal elements.
