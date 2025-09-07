@@ -339,7 +339,7 @@ divisible by 400).
 9. & and | are logical operators in Java. False
 10. In Java, a >> 2 shifts the binary bits of a to the left by 2 positions. False
 
-# Chapter 5 
+# Chapter 5 Loops, Methods and Arrays
 
 1. Comments
 2. While Loop
@@ -438,4 +438,16 @@ divisible by 400).
 47. Create a program to merge two sorted arrays.
 48. Create a program to search an element in a 2-D array.
 49. Create a program to do sums and average of all elemets in a 2-D array.
-50. Create a program to find the sum of two diagonal elements.
+50. Create a program to find the sum of two diagonal elements in a 2-D array.
+
+## Chapter 5 Practice Exercise 
+1. A 'while' loop in java continues to execute as its condition is true. True
+2. The body of a 'while' loop will execute at least once, regardless of teh condition. False
+3. A 'while' loop cannot be used for iterating over an array. False
+4. Infinite loops are not possible with 'while' loops in java. False
+5. A method in java can return more than one value at a time. False
+6. It's mandatory for every Java method to have a return type. True
+7. The size of an array in java can be modified after it is created. False
+8. Arrays in Java can contain elements of different data types. False
+9. An array is a reference type in java. True
+10. Java arrays are zero-indexed, meaning the first element has an index of 0. True

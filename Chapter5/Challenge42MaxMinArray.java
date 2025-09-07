@@ -2,19 +2,11 @@
 public class Challenge42MaxMinArray {
 
     public static void main(String[] args) {
-        int[] myArr = {4, 2, 6, 23, 62, 23, 43, 6};
-        printArray(myArr);
+        // int[] myArr = {4, 2, 6, 23, 62, 23, 43, 6};
+        int[] myArr = ArrayUtility.inputArray();
+        ArrayUtility.printArray(myArr);
         System.out.println("Greatest element in array : " + maxArray(myArr));
         System.out.println("Smallest element in array : " + minArray(myArr));
-    }
-
-    public static void printArray(int[] arr) {
-        int i = 0;
-        System.out.print("[ ");
-        while (i < arr.length) {
-            System.out.print(arr[i++] + " ");
-        }
-        System.out.println(']');
     }
 
     public static int maxArray(int[] arr) {
