@@ -451,3 +451,123 @@ divisible by 400).
 8. Arrays in Java can contain elements of different data types. False
 9. An array is a reference type in java. True
 10. Java arrays are zero-indexed, meaning the first element has an index of 0. True
+
+# Chapter 6 Classes & Objects
+
+1. Process vs Object Oriented
+2. Instance Variable and Methods
+3. Declaring and Using Objects
+4. Class vs Object
+5. This & Static keywords
+6. conturctors & Code Blocks
+7. Stack vs Heap Memory
+8. Primitive bs Reference Types
+9. Variable Scopes
+10. Garbage Collection & Finalize
+
+### Process vs Object Oriented
+
+- Procedural Programming : Execution of a processes by functions.
+- OOP : Programming using objects and classes.
+
+### Instance Variable and Methods
+
+![alt text](Images/image-15.png)
+
+### declaring Objects
+![alt text](Images/image-16.png)
+- new instantiates a new objects of a class
+- memory allocation in heap
+- calls class constructor to initilize the object
+- returns reference
+- also used for array creation int[] arr = new int[];
+- Dynamic Allocation : allocate memory at runtime.
+
+- syntax
+![alt text](Images/image-17.png)
+
+### Using Objects
+- access using . operator
+
+### Class vs Objects
+![alt text](Images/image-18.png)
+- Class is a blueprint
+- Objects are real values in memory
+
+### This Keyword
+- current instance
+- can be used to invoke constructor of the same class (this()).
+- Invokes a method of the current object
+- pass as argument
+- return the current class instance
+
+### Static Keyword
+
+- Static Variable belong to the class, shared among all instances not individual.
+- Static method called without creating and object of class. can only access static var and other methods
+- static methods can't directly reference non static members.
+
+### Constructors
+
+- initialize new objects and set intial state for object's attributes.
+- same name as the class
+- no return type (returns object)
+- automatically called
+
+- Types of constructor
+    - Default : no constructor explicitly defined, java intializes all member variables to default values.
+    - Parameterized : parameters to pass values when creting an object
+
+- Constructor Chaining
+    ![alt text](Images/image-19.png)
+    - this() to call another constructor
+    - this() must be first statement
+    - can't form a loop, must have termination point
+
+- Code Blocks
+    - scope : {}
+    - local variable : not accessible outside
+    - Initialization Block : run each time an instance is created
+    - Static Block run once
+
+### Stack vs Heap Memory
+![alt text](Images/image-20.png)
+![alt text](Images/image-21.png)
+
+### Primitive and Reference Types
+![alt text](Images/image-22.png)
+![alt text](Images/image-23.png)
+
+- primitives store actual values, reference types store addresses to objects
+- prmitives have specific defaults like 0 or false, reference tupes default to null
+- prmitives is generally faster
+- primitive stack, reference heap
+- compared by value, compared by reference
+
+### Variable Scopes
+
+- Instance variable/ global scoped/variable : accessed thoughout class
+- local scoped : accesed inside block
+
+### Garbage Collection and Finalize
+- automatic process, managed by JVM
+- object eligiblility, no longer reachable
+- no manual control, cannot explicitly deallocate memory
+- Ganerational collection : divides memory into regions, young, old, permanent generations based on object age
+- occurs in heap memory
+- can affect application performance
+
+![alt text](Images/image-24.png)
+- Finalization : before obj garbage collected, the finalize() may called, give chance to clean up resources, it not guarateed to run and discouraged.
+
+## Chapter 6 Challenge
+
+51. Create a Book class for a library system.
+    - Instance variable : title, author, isbn.
+    - static variable : totalBooks, a couter for the total numer of book instaces.
+    - Static method : getTotalBooks(), to get the total number of books in the library.
+52. Design a Course class.
+    - Instance variable : borrowBooks(), to get the total number of books in the library.
+    - Static variable : maxCapicity, the maximum number of students for any course.
+    - Instance methods : enrollStudents(String studentName), unenrollStudent(StudentName).
+    - Static method : setMaxCapacity(int capacity), to set the maximum capacity for courses.
