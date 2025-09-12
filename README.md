@@ -559,6 +559,7 @@ divisible by 400).
 
 ![alt text](Images/image-24.png)
 - Finalization : before obj garbage collected, the finalize() may called, give chance to clean up resources, it not guarateed to run and discouraged.
+- System.gc(), suggests JVM to perform GC.
 
 ## Chapter 6 Challenge
 
@@ -571,3 +572,159 @@ divisible by 400).
     - Static variable : maxCapicity, the maximum number of students for any course.
     - Instance methods : enrollStudents(String studentName), unenrollStudent(StudentName).
     - Static method : setMaxCapacity(int capacity), to set the maximum capacity for courses.
+
+## Chapter 6 Practice Exercise
+1. Object-oriented proframming is mainly concerned with data rather than logic. True
+2. Instance methods in Java can be called without creating an object of the class. False
+3. A class in Java is a template that can be used to create objects. True
+4. Static methods belong to the class and can be called without an object. True
+5. The new keyword is used to declare an array in java. True
+6. Variables declared within a method are called instance variables. False
+7. In Java, you can access instance variables though static methods diretly. False
+8. Every object in Java has its own unique set of instatnce variables. True
+9. The static keyword in Java means that a particular memeber belongs to a type itself, rather than to instances of that type. True
+10. Variable scope in java determined at runtime. False
+
+# Chapter 7 Control Statements, Math & String
+1. Ternary operator
+2. Switch 
+3. Loops (Do-while, for, for each)
+4. Using break & continue
+5. Recursion
+6. Random Numbers & Math class
+7. Don't Learn Syntax
+8. toString Method
+9. String class
+10. StringBuffer vs StringBuilder
+11. Final keyword
+
+### Ternary Operator
+- variable = condition(boolean) ? exp 1 (true) : exp2 (false)
+- expression must return compatible types
+
+### Switch 
+![alt text](Images/image-26.png)
+- Multiple Case
+- break prevent fall-through
+- default case
+- enhance switch
+    ![alt text](Images/image-25.png)
+- can retun a value using yield
+
+### Loops (Do-while)
+
+![alt text](Images/image-27.png)
+1. Exicutes block first, then check condition
+2. at least one iteration
+3. avoid infinite loop
+
+### Loops (for)
+![alt text](Images/image-28.png)
+- preferred for couting iterations
+
+### Loops (for each)
+
+![alt text](Images/image-29.png)
+- array itereation
+- parameters : item, index
+- using return is similar to continue in traditional loops
+- not straightforward to break out
+
+### using break and continue
+- break : stops a loop
+- continue : skip one iteration
+- in while loop manually update before continually
+
+### Recursion
+![alt text](Images/image-30.png)
+- function calls itself
+- Base condition : to stop recursion
+- Stack Overflow risk : excessive recursion can cause stack overflow
+- ideal for problems divisible into similar, smaller problems.
+
+### Random Numbers & Math class
+- Math methods are static and accessed directly
+- constants : includes PI and E for pi and base of natural log.
+
+- Math methods :
+    - abs() : Absolute value
+    - ceil() : Rounds up
+    - floor() : Rounds down
+    - round() : rounds to nearest integer
+    - max(), min() : max and min of two nums
+    - pow() : power
+    - sqrt() : square root
+    - random() : random double from between 0 and 1
+    - exp(), log() : exponential, logarithmic func
+    - sin(), cos()... : trignomatric func
+
+### Don't Learn Syntax
+- google, oracle docs, chatGPT
+- understood concept
+
+### toString Method
+- string representation of an object
+- inherited from the object class
+- return class name, "@", and hashcode
+- commonly overrideen in for custom meaningful o/p
+- Implicit call while string concatenation
+
+### String Class
+![alt text](Images/image-31.png)
+- Immutablility
+- java maintains pool of strings for efficiency
+- comparing : equals() checks value, == checks reference
+- concatenation : +, create new string
+- methods : length(), substring(), equals(), compareTo(), indexOf()
+- being immutable, string can use more memory
+
+- String format
+![alt text](Images/image-32.png)
+![alt text](Images/image-33.png)
+![alt text](Images/image-34.png)
+
+- StringBuffer vs StringBuilder
+![alt text](Images/image-35.png)
+
+- Final
+- its becomes constant
+- for performance optimization
+- null safety : final var must be intitialized before the contructor completes
+
+## Chapter 7 Challenges
+53. Create a program to find the minimum of two numbers.
+54. Create a program to calculate the absolute value of a given integer.
+56. Create a program to Based on a student's score, categorize as "High", "Moderate", or "Low" using the ternary operator (eg. High for scores > 80, Moderate for 50-80, Low for < 50)
+57. Create a program to pring the month of the year based on a number (1-12) input by the user.
+58. Create a program to create a simple calculator that uses a switch statement to perform basic arithmetic operations like addition, substraction, multiplication, and division.
+59. Create a program using do-while to find password checker until a valid password is entered.
+60. Create a program  using do-while to implement a number guessing game.
+61. Create a program using for loop multiplication table for a number.
+62. Create a program using for to diaplay if a number is prime or not.
+63. Create a program using for-each to find the miximum value in an integer array.
+64. Create a program using for-each to find the occurrrences of a specific element in an array.
+65. Create a program using break to read inputs from the user in a loop and break the loop if a specific keyword (like "exit") is entered.
+66. Create a program using continue to sum all positive numbers entered by the user; skip any negative numbers.
+67. Create a program using continue to print only even numbers using continue for odd numbers.
+68. Create a program using recursion to display the Fibonacci series upto a certain number.
+69. Create a program using recursion to check if a string is a palindrome using recursion.
+70. Define a Student class with fields like name and age, and use toString to print student details.
+71. Concatenate and Convert: Take two strings, concatenate them, and convert the result to uppercase.
+72. Calculate the area and circumference of a circle for a given radius using Math.PI
+73. Simulate a dice roll using Math.random() and display the outcome (1 to 6).
+74. Create a number guessing game where the program selects a random number, and the user has to guess it.
+75. Take an array of words and concatenate them into a single string using StringBuilder.
+76. Create an object with final fields and a constructor to initialize them.
+
+## Chapter 7 Practice Exercise
+1. The ternary operator in Java can replace certain types of if-else statements. True
+2. A switch statement in Java can only test for equality with constants. True
+3. The do-while loop will execute at least once even if the condition is false. True
+4. A for-each loop in Java is used to iterate over arrays. True
+5. The break statement skips the current iteration. False
+6. The continue statement exits the loop immediately, reagardless of the condition. False
+7. In Java, recursion is a process where a method can call itself directly. True
+8. Random numbers genreated by math.random() are inclusive of 0 and 1. False
+9. the String class is mutable, meaning it can be cahnged after it's created. False
+10. StringBuilder is faster than StringBuffer since it is not synchronized. True
+11. A final variable in Java can be assigned a value once and only once. True.
